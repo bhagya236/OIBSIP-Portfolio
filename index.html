@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     <meta charset="UTF-8" />
+   <title>Bhagya Portfolio</title>
+   <link href="style.css" rel="stylesheet">
+</head>
+   <body>
+    <!-- HERO SECTION WITHOUT IMAGE -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>Bhagya Lakshmi G</h1>
+    <h3>Java Full Stack Developer</h3>
+    <p>Building modern, responsive web applications with passion.</p>
+  
+  </div>
+</div>
+<!-- NAVIGATION MENU -->
+<nav class="navbar">
+  <div class="logo">BL</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul> 
+</nav>
+<!-- ABOUT SECTION -->
+<section id="about" class="section about-section">
+  <h2>About Me</h2>
+  <p>
+    I’m Bhagya Lakshmi , a passionate Full Stack Developer with strong knowledge in Java, Oracle, HTML, CSS, JavaScript, Servlet, and JSP.
+    I love building dynamic web applications and learning new technologies.
+  </p>
+</section>
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+
+    <!-- Back-End -->
+    <div class="skill-column">
+      <h3>Back-End Technologies</h3>
+      <span class="skill-badge">Java</span><br>
+      <span class="skill-badge">Oracle / SQL</span><br>
+      <span class="skill-badge">JSP</span><br>
+      <span class="skill-badge">Servlet</span><br>
+    </div>
+
+    <!-- Front-End -->
+    <div class="skill-column">
+      <h3>Front-End Technologies</h3>
+      <span class="skill-badge">HTML</span><br>
+        <span class="skill-badge">Css</span><br>
+      <span class="skill-badge">JavaScript</span><br>
+        <span class="skill-badge">JQuery</span><br>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section projects-section">
+  <h2>My Projects</h2>
+  
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Employee Management </h3>
+      (HTML, CSS, JavaScript, JSP, Oracle)<br><br>
+      <p>Maintains employee, service log, supplier, and purchase details using Java Swing and Oracle Database.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Service Log Module </h3>
+      (HTML, CSS, JavaScript, JSP, Oracle)<br><br>
+      <p>Tracks service activities for equipment. Each service entry includes status, scheduled time, and service history. JSP is used to handle backend logic and connect with the Oracle database.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Supplier Module </h3>
+      (HTML, CSS, JavaScript, JSP, Oracle)<br><br>
+      <p> Stores supplier contact information and product supply history. It ensures supplier details are easily accessible and linked with purchase records. Data is validated at both frontend and backend levels.</p>
+    </div>
+
+  </div>
+</section>
+<!-- CONTACT SECTION -->
+<section id="contact" class="section contact-section">
+  <h2>Contact Me</h2>
+  
+  <p>If you’d like to connect for job opportunities or collaborations, feel free to reach out.</p>
+
+  <div class="contact-info">
+    <p><strong>Email:</strong> bhagyagovindaraj23@gmail.com</p>
+    <p><strong>Phone:</strong> +91-9025570927</p>
+    <p><strong>Location:</strong> Kumbakonam, Tamil Nadu</p>
+    <p><strong>LinkedIn:</strong>
+    <a href="https://www.linkedin.com/in/bhagya-lakshmi-g-851029330" target="_blank">
+      linkedin.com/in/bhagya-lakshmi-g-851029330
+    </a></p>
+    <p><strong>GitHub:</strong>
+    <a href="https://github.com/Bhagya236" target="_blank">
+      github.com/Bhagya236
+    </a></p>
+  </div>
+</section>
+<footer class="footer">
+  <p>&copy; 2025 Bhagya Lakshmi G. All rights reserved.</p>
+</footer>
+<script>const sections =document.querySelectorAll('section');
+  function revealonscroll(){
+    sections.forEach(sections=> {
+      const rect = sections.getBoundingClientRect();
+      if(rect.top<window.innerHeight-100){
+        sections.classList.add('visible');
+      }
+    });
+  }
+  window.addEventListener('scroll',revealonscroll);
+  window.addEventListener('load',revealonscroll);
+</script>
+   </body>
+</html>
